@@ -1,6 +1,6 @@
 package me.micopiira;
 
-public class Sotu {
+public class HETU {
     private String value;
 
     public boolean getValid() {
