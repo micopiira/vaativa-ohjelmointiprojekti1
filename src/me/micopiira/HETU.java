@@ -1,13 +1,12 @@
 package me.micopiira;
 
 public class HETU {
+    private static final HETUValidator hetuValidator = new HETUValidator();
+
     private String value;
 
     public boolean getValid() {
-        if (value == null || value.length() != 11) {
-            return false;
-        }
-        return true;
+        return hetuValidator.validate(this.getValue());
     }
 
     public String getValue() {
