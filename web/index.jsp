@@ -5,10 +5,11 @@
 </head>
 <body>
 	<div class="container">
-		<a href="${pageContext.request.contextPath}/teht1.jsp">Tehtävä 1</a>
-		<a href="${pageContext.request.contextPath}/teht2.jsp">Tehtävä 2</a>
-		<a href="${pageContext.request.contextPath}/teht4.jsp">Tehtävä 4</a>
-
+		<ul>
+			<li><a href="${pageContext.request.contextPath}/teht1.jsp">Tehtävä 1</a></li>
+			<li><a href="${pageContext.request.contextPath}/teht2.jsp">Tehtävä 2</a></li>
+			<li><a href="${pageContext.request.contextPath}/teht4.jsp">Tehtävä 4</a></li>
+		</ul>
 	</div>
 </body>
 </html>

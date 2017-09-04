@@ -5,18 +5,17 @@
 </head>
 <body>
 <div class="container">
+	<h1>HETU Validator</h1>
 	<jsp:useBean id="hetu" class="me.micopiira.HETU">
 		<jsp:setProperty name="hetu" property="value"/>
 	</jsp:useBean>
 	<form method="GET">
-		<label for="hetu">hetu</label>
-		<input id="hetu"
-		       name="value"
+		<input name="value"
 		       type="text"
 		       value="${hetu.value}"
 		       class="form-control"
 		       autocomplete="off">
-		<input type="submit" class="btn btn-primary" value="Tarkista">
+		<input type="submit" class="btn btn-primary" value="Validate">
 	</form>
 	<div class="alert ${hetu.valid ? 'alert-success' : 'alert-danger'}" role="alert">
 		${hetu.value} ${hetu.valid ? 'is' : 'is not'} a valid HETU
