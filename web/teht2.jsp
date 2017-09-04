@@ -6,7 +6,7 @@
 <body>
 <div class="container">
 	<jsp:useBean id="ympyra" class="me.micopiira.Ympyra2">
-		<jsp:setProperty name="ympyra" property="radius" value="${param['radius']}"/>
+		<jsp:setProperty name="ympyra" property="radius"/>
 	</jsp:useBean>
 	<form method="GET">
 		<label for="radius">Radius</label>
